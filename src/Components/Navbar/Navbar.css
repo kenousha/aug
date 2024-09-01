@@ -44,14 +44,14 @@ nav {
     }
 
   .btn{
-    border: 2px solid #3685fb;
+    border: 20px solid #3685fb;
     background-color: white;
     color: black;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    margin: -20px auto;
+    margin-top: -20px;
     padding: 1rem;
     }
       
