@@ -26,20 +26,20 @@ nav {
   .menu {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     }
 
 
-  .item a {
-    padding: 0.25rem;
+  .item {
+    padding: 0%;
     margin: 20px;
     font-size: 1.05rem;
     font-weight: 500;
     color: black;
     }
 
-  .item a:hover {
+  .item :hover {
     color: #3685fb;
     }
 
@@ -51,6 +51,8 @@ nav {
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    margin: -20px auto;
+    padding: 1rem;
     }
       
    .btn:hover{

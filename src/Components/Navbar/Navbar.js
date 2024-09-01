@@ -1,10 +1,11 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom"; // Importing the Link component from react-router-dom library
 
 export const Navbar = () => {
   return (
     <nav>
-        <a href="../Landing_Page/LandingPage.html">
+        <Link to="../Landing_Page/LandingPage.html">
     <div className="logo">
       StayHealthy
       <svg
@@ -35,14 +36,14 @@ export const Navbar = () => {
         .
       </span>
     </div>
-    </a>
-                <ul class="menu">
-                        <li class="item"><a href="../Landing_Page/LandingPage.html">Home</a></li>
-                        <li class="item"><a class="topmenu" href="#">Appointments</a></li>
-                        <li class="item"><a class="topmenu" href="#">Health Blog</a></li>
-                        <li class="item"><a class="topmenu" href="#">Reviews</a></li>
-                        <li class="item"><a href="../Sign_Up//Sign_Up.html"><button class="btn">Sign Up</button></a></li>
-                        <li class="item"><a href="../Login/Login.html"><button class="btn">Login</button></a></li>
+    </Link>
+                <ul className="menu">
+                        <li className="item"><Link to="../LandingPage">Home</Link></li>
+                        <li className="item"><Link className="topmenu" to="#">Appointments</Link></li>
+                        <li className="item"><Link className="topmenu" to="#">Health Blog</Link></li>
+                        <li className="item"><Link className="topmenu" to="#">Reviews</Link></li>
+                        <li className="item"><Link to="../SignUp"><button className="btn">Sign Up</button></Link></li>
+                        <li className="item"><Link to="../Login"><button className="btn">Login</button></Link></li>
                 </ul>
     </nav>
 );
